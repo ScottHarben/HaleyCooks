@@ -158,6 +158,10 @@ input[type=text]{
   width: auto;
 }
 
+#coming-soon{
+  text-align: center;
+}
+
 .fav-header a{
   text-align: left;
   width: 160px;
@@ -194,7 +198,6 @@ input[type=text]{
 
 .container{
   margin: 20px 16.66% 40px 16.66%;
-  max-width: 1208px;
 }
 
 .ing li{

@@ -12,5 +12,11 @@ urlpatterns = [
     url(r'^pan/', views.pan, name="pan"),
     url(r'^peachcobbler/', views.peachcobbler, name="peachcobbler"),
     url(r'^berrypie/', views.berrypie, name="berrypie"),
-
+    url(r'^bananaberry/', views.bananaberry, name="bananaberry"),
+    url(r'^cocostrawberry/', views.cocostrawberry, name="cocostrawberry"),
+    url(r'^fruitstand/', views.fruitstand, name="fruitstand"),
+    url(r'^margarita/', views.margarita, name="margarita"),
+    url(r'^lemonsoda/', views.lemonsoda, name="lemonsoda"),
+    url(r'^toothpick/', views.toothpick, name="toothpick"),
+    url(r'^about/', views.about, name="about"),
 ]
