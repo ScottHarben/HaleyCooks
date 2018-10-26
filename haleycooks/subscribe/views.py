@@ -17,6 +17,12 @@ def cocktails(request):
 def pan(request):
     return render(request,'subscribe/pan.html')
 
+def peachcobbler(request):
+    return render(request,'subscribe/peachcobbler.html')
+
+def berrypie(request):
+    return render(request,'subscribe/berrypie.html')
+
 def form(request):
     form = EmailForm()
     if request.method == "POST":

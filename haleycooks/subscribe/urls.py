@@ -10,5 +10,7 @@ urlpatterns = [
     url(r'^smoothies/', views.smoothies, name="smoothies"),
     url(r'^cocktails/', views.cocktails, name="cocktails"),
     url(r'^pan/', views.pan, name="pan"),
+    url(r'^peachcobbler/', views.peachcobbler, name="peachcobbler"),
+    url(r'^berrypie/', views.berrypie, name="berrypie"),
 
 ]
