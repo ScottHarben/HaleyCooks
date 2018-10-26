@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'subscribe/base.html' %}
+{% block body_block %}
+{% load static %}
+
+  <div class="form">
+      <div class="fav-header" id="form-header">Subscribe for weekly recipes</div>
+      <form method="POST">
+        {% csrf_token %}
+        {{ chicken.as_p }}
+        <button type="submit" class="button">Subscribe</button>
+      </form>
+  </div>
+
+{% endblock %}

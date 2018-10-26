@@ -1,0 +1,297 @@
+body{
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  color: #4C4C4C;
+  margin: 0;
+}
+
+/* --------------------------Navigation Bar----------------------- */
+
+.nav{
+  margin-left: 8.33%;
+  margin-right: 8.33%;
+}
+
+#logo{
+  font-family: 'Homemade Apple', cursive;
+  width: 200px;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo-link:hover{
+  color: #4C4C4C;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  display: inline-block;
+  width: 106px;
+  padding: 0;
+  margin: 0;
+}
+
+.mid-nav{
+  display: inline;
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  color: #4C4C4C;
+}
+
+a:hover{
+  color: #BA9C9C;
+}
+
+#top-nav-items-recipes:hover .arrow{
+  border-color: #BA9C9C;
+}
+
+#top-nav-items-recipes:hover .dropdown-container{
+  display: block;
+}
+
+.arrow {
+  box-sizing: border-box;
+  height: 5px;
+  width: 5px;
+  border-style: solid;
+  border-color: #4C4C4C;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  display: inline-block;
+  margin: 0px 3px 3px 2px;
+}
+
+.burger{
+   width: 35px;
+   height: .99px;
+   background-color: #4C4C4C;
+   margin: 6px auto 0px auto;
+}
+
+#menu{
+ display: none;
+}
+
+#top-nav-items-recipes{
+  position: relative;
+}
+
+.dropdown-container{
+  position: absolute;
+  z-index: 1;
+}
+
+#dropdown-show{
+  display: block;
+}
+
+#dropdown-hide{
+  display: none;
+}
+
+.dropdown-container li{
+  display: block;
+  background-color: white;
+  font-size: 15px;
+}
+
+.featured{
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.featured img{
+  width: 100%;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+.form{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+input[type=text]{
+  padding: 8px 15px;
+  margin: 2px;
+}
+
+.button{
+  padding: 8px 15px;
+  background-color: #D8D8D8 ;
+  color: #2D3A3A;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+/* --------------------------------Body----------------------------- */
+.fav-container{
+  margin-left: 8.33%;
+  margin-right: 8.33%;
+  margin-top: 40px;
+}
+
+.fav-header{
+  text-align: left;
+  font-size: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: auto;
+}
+
+.fav-header a{
+  text-align: left;
+  width: 160px;
+}
+
+.fav-content{
+  margin-bottom: 30px;
+}
+
+.fav-item{
+  display: inline-block;
+  vertical-align: text-top;
+  width: 32%;
+  padding: 2px;
+  text-align: center;
+}
+
+.fav-item a{
+  padding: 0px;
+}
+
+.fav-item p{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fav-item img{
+  width: 100%;
+}
+
+#form-header{
+  text-align: center;
+}
+
+.container{
+  margin: 20px 16.66% 40px 16.66%;
+  max-width: 1208px;
+}
+
+.ing li{
+  display: block;
+  width: auto;
+}
+@media screen and (max-width: 768px){
+
+.body{
+  margin-top: 30px;
+}
+
+li{
+  display: block;
+}
+
+#menu{
+  display: block;
+}
+
+#logo{
+  display: block;
+}
+
+.nav{
+  margin: auto;
+}
+
+.top-nav-items{
+  margin: auto;
+}
+
+.top-nav-items a{
+  text-align: left;
+}
+
+.mid-nav{
+  display: none;
+}
+
+.mid-nav li{
+  margin-left: 0px;
+  width: 100%;
+}
+
+.dropdown-container{
+  position: relative;
+}
+
+.dropdown-container a{
+  padding-left: 20px;
+}
+
+.featured{
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+
+.featured img{
+  width: 100%;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.fav-container{
+  margin: auto;
+}
+
+.fav-header{
+  padding-left: 10px;
+}
+
+.fav-item{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.fav-content p{
+  margin-top: 5px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.container{
+  margin: 20px 8.33% 40px 8.33%;
+}
+}
+
+@media screen and (min-width: 768px){
+  .mid-nav{
+    display: inline!important;
+  }
+}

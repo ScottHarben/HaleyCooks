@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% extends 'subscribe/base.html' %}
+{% block body_block %}
+{% load static %}
+
+<div class="body">
+  <div class="fav-container">
+
+    <div class="fav-header">
+      Cocktails
+    </div>
+    <div class="fav-content">
+      <div class="fav-item">
+        <img src="{% static "subscribe/cocktails/lime.jpg" %}" alt="">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="fav-item">
+        <img src="{% static "subscribe/cocktails/lemon.jpg" %}" alt="">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="fav-item">
+        <img src="{% static "subscribe/cocktails/rasberry.jpg" %}" alt="">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+    </div>
+    <div class="fav-content">
+      <div class="fav-item">
+        <img src="{% static "subscribe/meals/toast.jpg" %}" alt="">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="fav-item">
+        <img src="{% static "subscribe/meals/cobbler.jpg" %}" alt="">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="fav-item">
+        <img src="{% static "subscribe/meals/pie.jpg" %}" alt="">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+    </div>
+    <div class="fav-content">
+      <div class="fav-item">
+        <img src="{% static "subscribe/smoothies/bananas.jpg" %}" alt="">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="fav-item">
+        <img src="{% static "subscribe/smoothies/coconut.jpg" %}" alt="">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+      <div class="fav-item">
+        <img src="{% static "subscribe/smoothies/berries.jpg" %}" alt="">
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

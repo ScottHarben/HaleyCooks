@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link rel="stylesheet" href="{% static "subscribe/style.css" %}">
+    <title>Haley's Recipe Blog</title>
+  </head>
+  <body>
+
+    <div class="nav">
+      <nav>
+      <ul class="top-nav-container">
+
+        <li class="top-nav-items" id="logo">
+          <a href="{% url 'subscribe:index' %}" class="logo-link">
+            <h1>Haley Cooks</h1>
+          </a>
+        </li><!--
+     --><li class="top-nav-items" id="menu">
+          <a href="#" id="menu-btn">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+          </a>
+        </li><!--
+     --><div class="mid-nav">
+        <li class="top-nav-items"><a href="{% url 'subscribe:index' %}">Home</a></li><!--
+     --><li class="top-nav-items" id="recipe-nav">
+          <a href="#"  id="top-nav-items-recipes">Recipes <div class="arrow"></div></a>
+          <div class="dropdown-container" id="dropdown-hide">
+            <ul>
+              <li> <a href="{% url 'subscribe:meals' %}">Meals</a> </li>
+              <li> <a href="{% url 'subscribe:smoothies' %}">Smoothies</a> </li>
+              <li> <a href="{% url 'subscribe:cocktails' %}">Cocktails</a> </li>
+            </ul>
+          </div>
+        </li><!--
+     --><li class="top-nav-items"><a href="#">About</a></li><!--
+     --><li class="top-nav-items"><a href="{% url 'subscribe:form' %}">Subscribe</a></li>
+        </div>
+
+      </ul>
+      </nav>
+    </div>
+    {% block body_block %}
+
+    {% endblock %}
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="{% static "subscribe/script.js" %}"></script>
+  </body>
+</html>
